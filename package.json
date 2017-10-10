@@ -1,0 +1,28 @@
+{
+  "name": "tea",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "gulp": "^3.9.1"
+  },
+  "devDependencies": {
+    "gulp-clean": "^0.3.2",
+    "gulp-imagemin": "^3.4.0",
+    "gulp-less": "^3.3.2",
+    "run-sequence": "^2.2.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://xiaoxiaoxia0707:x0101618866@github.com/xiaoxiaoxia0707/tea.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/xiaoxiaoxia0707/tea/issues"
+  },
+  "homepage": "https://github.com/xiaoxiaoxia0707/tea#readme"
+}
