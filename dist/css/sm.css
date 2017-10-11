@@ -1020,7 +1020,7 @@ a {
 }
 .bar-tab .tab-item.active,
 .bar-tab .tab-item:active {
-  color: #00b0ec;
+  color: #ddc27b;
 }
 .bar-tab .tab-item .badge {
   position: absolute;

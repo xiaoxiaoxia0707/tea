@@ -1,0 +1,54 @@
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <title></title>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="stylesheet" type="text/css" href="css/sm.css">
+    <link rel="stylesheet" type="text/css" href="css/sm-extend.css">
+    <link rel="stylesheet" type="text/css" href="css/module.css">
+    <style>
+       .bar:after{
+        height:0px;
+       }
+    </style>
+</head>
+
+<body>
+<div class="page-group">
+    <div class="page">
+     <!--头部内容 !-->
+        <header class="bar bar-nav">
+        
+        </header>
+         <div class="content search-content">
+            <div class="buttons-tab">
+                <a id="all-tab-btn" class="tab-link  button active" data-status="0">全部</a>
+                <a id="payment-tab" class="tab-link  button" data-status="init">待付款</a>
+                <a id="send-tab" class="tab-link button" data-status="pass">待发货</a>
+                <a id="harvest-tab" class="tab-link button" data-status="send">待收货</a>
+                <a id="complete-tab" class="tab-link button" data-status="finish">已完成</a>
+            </div>
+             <div class="tabs">
+
+                <div id="all-tab" class="tab active" data-url="${basepath}/front/order/toOrderDetailList"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<script type='text/javascript' src='js/lib/zepto.js' charset='utf-8'></script>
+<script>
+    $.config={
+        router:false
+    }
+</script>
+<script type='text/javascript' src='js/lib/sm.js' charset='utf-8'></script>
+<script type='text/javascript' src='js/lib/sm-extend.js' charset='utf-8'></script>
+<script>
+    $.init();
+</script>
+</body>
+
+</html>
