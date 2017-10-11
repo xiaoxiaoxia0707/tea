@@ -20,20 +20,23 @@
 <div class="page-group">
     <div class="page">
      <!--头部内容 !-->
-        <header class="bar bar-nav">
-        
-        </header>
          <div class="content search-content">
+            <div class="searchbar">
+                <a class="icon icon-left pull-left back"></a>
+                <input type="text" placeholder="输入关键字搜索宝贝" class="search">
+                <img src="./images/search.png" alt="" class="ico">
+                <span>搜索</span>
+            </div>
             <div class="buttons-tab">
-                <a id="all-tab-btn" class="tab-link  button active" data-status="0">全部</a>
-                <a id="payment-tab" class="tab-link  button" data-status="init">待付款</a>
-                <a id="send-tab" class="tab-link button" data-status="pass">待发货</a>
-                <a id="harvest-tab" class="tab-link button" data-status="send">待收货</a>
-                <a id="complete-tab" class="tab-link button" data-status="finish">已完成</a>
+                <a href="#class-tab" class="tab-link  button">分类</a>
+                <a href="#sales-tab" class="tab-link  button active">销量</a>
+                <a href="#new-tab" class="tab-link button">新品</a>
+                <a href="#price-tab" class="tab-link button">价格</a>
             </div>
              <div class="tabs">
-
-                <div id="all-tab" class="tab active" data-url="${basepath}/front/order/toOrderDetailList"></div>
+                <div id="sales-tab" class="tab active">
+                    <ul class="o-list"> <li class="row"><div class="col-20"> <img src="https://gd3.alicdn.com/imgextra/i2/0/TB1pKptXsrHK1Jjy1zjXXanYVXa_!!0-item_pic.jpg_400x400.jpg_.webp" /></div><div class="col-80" ><div class="p-list">部分现货【王小毒】 琴心  圆头浅口绑带粗跟单鞋子女8.31</div><div class="pspec"><div class="s-price">25.00</div><div class="s-payment">149人付款</div> <img class="s-count" src="./images/dian.png"></div></div>  </li><li class="row"><div class="col-20"> <img src="https://gd3.alicdn.com/imgextra/i2/0/TB1pKptXsrHK1Jjy1zjXXanYVXa_!!0-item_pic.jpg_400x400.jpg_.webp" /></div><div class="col-80" ><div class="p-list">部分现货【王小毒】 琴心  圆头浅口绑带粗跟单鞋子女8.31</div><div class="pspec"><div class="s-price">25.00</div><img class="s-count" src="./images/dian.png"></div></div>  </li> </ul> 
+                </div>
             </div>
         </div>
     </div>
