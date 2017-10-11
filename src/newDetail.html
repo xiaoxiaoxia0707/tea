@@ -1,0 +1,88 @@
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <title>详情</title>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="stylesheet" type="text/css" href="css/sm.css">
+    <link rel="stylesheet" type="text/css" href="css/idangerous.swiper.css">
+    <link rel="stylesheet" type="text/css" href="css/module.css">
+    <style>
+       .bar:after{
+        height:0px;
+       }
+    </style>
+</head>
+
+<body>
+<div class="page-group">
+    <div class="page">
+        <!--头部内容 !-->
+        <header class="bar bar-nav">
+            <a class="icon icon-left pull-left back" href="javascript:history.go(-1);location.reload()"></a>
+            <h1 class="title">资讯详情</h1>
+        </header>
+        <div class="content detail-content">
+            <!-- 幻灯片Slider -->
+            <div class="swiper-container" data-space-between='10'>
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                            <a href="#">
+                                <img alt="" src="http://m.360buyimg.com/mobilecms/s720x322_jfs/t5068/227/80705082/78718/2b3e7e51/58da47c7N7f52ec97.jpg!q70.jpg">
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <img src="http://img.alicdn.com/imgextra/i3/1910146537/TB2WRU_kkqvpuFjSZFhXXaOgXXa_!!1910146537.jpg_760x760Q70s50.jpg_.webp">
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <img src="http://img.alicdn.com/imgextra/i2/725677994/TB251FCd1tTMeFjSZFOXXaTiVXa_!!725677994.jpg_760x760Q70s50.jpg_.webp">
+                            </a>
+                        </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+            <!--详情内容 -->
+            <div class="card-detail card">
+                <div class="card-content">
+                    <div class="card-content-inner"><p>翟欣欣骗婚经历资产起底：处5个对象离了4次婚获利上亿</p><div class="createAccount" style="height:28px;"><p class="detailAccount">发布者：每日财经网</p><p class="detailTime">09-17</p></div><p>翟欣欣背后疑有骗婚团队，翟欣欣大量私密照片曝光，北京交大翟欣欣骗婚经历资产起底：处了5个对象离了4次婚获利上亿！翟欣欣的妈妈有问题，外公腐败也被曝光，具体内容请看下文。</p></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script type='text/javascript' src='js/lib/zepto.js' charset='utf-8'></script>
+<script type='text/javascript' src='js/lib/idangerous.swiper.min.js' charset='utf-8'></script>
+<script>
+    $.config={
+        router:false
+    }
+</script>
+<script type='text/javascript' src='js/lib/sm.js' charset='utf-8'></script>
+<script>
+    var mySwiper = new Swiper('.swiper-container', {
+                pagination: '.swiper-pagination',
+                autoplay: 2000,
+                loop: true,
+                paginationClickable: true,
+                onImagesReady: function (swiper) {
+                    var obj = $('.swiper-slide').find('img');
+                    var max;
+                    var heightList = new Array;
+                    for (var i = 0; i < obj.length; i++) {
+                        heightList[i] = $(obj[i]).height()
+                    }
+                    max = Math.max.apply(null, heightList);
+                    $('.swiper-slide').height(max);
+                    $('.swiper-wrapper').height(max);
+                }
+            });
+    $.init();
+</script>
+</body>
+
+</html>
