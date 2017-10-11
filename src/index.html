@@ -9,10 +9,17 @@
     <link rel="stylesheet" type="text/css" href="css/sm.css">
     <link rel="stylesheet" type="text/css" href="css/idangerous.swiper.css">
     <link rel="stylesheet" type="text/css" href="css/base.css">
+    <link rel="stylesheet" href="css/themes.css">
     <style type="text/css">
      .bar-tab:before {
   background-color: #d0d5de;
 }
+.swiper-container{
+    display: block;
+    height: 8.75rem;
+    width: 100%;
+}
+
     </style>
 </head>
 
@@ -20,28 +27,35 @@
 <div class="page-group">
     <div class="page">
         <div class="content shopping-content">
+        <div class="searchbar">
+            <input type="text" placeholder="输入关键字搜索宝贝" class="search">
+        </div>
            <!-- 幻灯片Slider -->
                 <div class="swiper-container">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <a href="#">
-                                <img alt="" src="http://m.360buyimg.com/mobilecms/s720x322_jfs/t5068/227/80705082/78718/2b3e7e51/58da47c7N7f52ec97.jpg!q70.jpg">
+                                <img class="slideimg" alt="" src="http://m.360buyimg.com/mobilecms/s720x322_jfs/t5068/227/80705082/78718/2b3e7e51/58da47c7N7f52ec97.jpg!q70.jpg">
                             </a>
                         </div>
                         <div class="swiper-slide">
                             <a href="#">
-                                <img src="http://img.alicdn.com/imgextra/i3/1910146537/TB2WRU_kkqvpuFjSZFhXXaOgXXa_!!1910146537.jpg_760x760Q70s50.jpg_.webp">
+                                <img class="slideimg" src="http://img.alicdn.com/imgextra/i3/1910146537/TB2WRU_kkqvpuFjSZFhXXaOgXXa_!!1910146537.jpg_760x760Q70s50.jpg_.webp">
                             </a>
                         </div>
                         <div class="swiper-slide">
                             <a href="#">
-                                <img src="http://img.alicdn.com/imgextra/i2/725677994/TB251FCd1tTMeFjSZFOXXaTiVXa_!!725677994.jpg_760x760Q70s50.jpg_.webp">
+                                <img class="slideimg" src="http://img.alicdn.com/imgextra/i2/725677994/TB251FCd1tTMeFjSZFOXXaTiVXa_!!725677994.jpg_760x760Q70s50.jpg_.webp">
                             </a>
                         </div>
                     </div>
                     <div class="swiper-pagination"></div>
                 </div>
+                 <div class="title-box">
+            <h3 class="title">品牌资讯</h3>
         </div>
+        </div>
+       
         <!-- 工具栏 -->
             <nav class="footer-bar bar bar-tab">
                 <a class="tab-item external active" href="#">
