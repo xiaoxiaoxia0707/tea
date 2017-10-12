@@ -1,0 +1,141 @@
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <title>产品详情</title>
+    <meta name="viewport" content="width=view-width,height=view-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="stylesheet" type="text/css" href="css/sm.css">
+    <link rel="stylesheet" type="text/css" href="css/idangerous.swiper.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/base.css">
+    <link rel="stylesheet" type="text/css" href="http://at.alicdn.com/t/font_418523_c8acn1ncpyi7ldi.css">
+    <style>
+       
+    </style>
+</head>
+
+<body>
+<div class="page-group">
+    <div class="page">
+        <!--内容部分 !-->
+        <div class="content product-content">
+             <!--搜索栏内容 !-->
+             <div class="header-icon">
+                <div class="left"><a class="icon icon-left pull-left"></a></div>
+                <div class="right"><a class="car-btn iconfont icon-gouwuche pull-right" id="car-badge"><span class="badge">2</span></a></div>
+             </div>
+            <!--列表页面 !-->
+            <!-- 幻灯片Slider -->
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <img alt="" src="http://m.360buyimg.com/mobilecms/s720x322_jfs/t5068/227/80705082/78718/2b3e7e51/58da47c7N7f52ec97.jpg!q70.jpg">
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <img src="http://img.alicdn.com/imgextra/i3/1910146537/TB2WRU_kkqvpuFjSZFhXXaOgXXa_!!1910146537.jpg_760x760Q70s50.jpg_.webp">
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <img src="http://img.alicdn.com/imgextra/i2/725677994/TB251FCd1tTMeFjSZFOXXaTiVXa_!!725677994.jpg_760x760Q70s50.jpg_.webp">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            <!-- 商品详情 -->
+            <div class="product-card card ">
+                <div class="card-header no-border"> <div class="list-block media-list"> <ul> <li> <div class="item-inner"> <div class="item-title">Swisse  液体胶原蛋白 500ml瓶Swisse  </div><div class="item-title-row"> <div class="item-subtitle price-item-subtitle">￥18.00</div> <div class="item-subtitle"><span>销量</span>354件</div> <div class="item-subtitle">库存:<span class="p-stock">354件</span></div> </div> </div> </li> </ul> </div> </div>
+            </div>
+            <!-- 促销信息 -->
+            <!-- 数量信息 -->
+            <div class="please-card card">
+                <div class="card-content">
+                    <div class="list-block">
+                        <ul>
+                            <li>
+                                <a href="#" class="item-link item-content" id="specBtn">
+                                    <div class="item-media"><i class="icon icon-f7"></i></div>
+                                    <div class="item-inner">
+                                        <input type="hidden" class="productID">
+
+                                        <div class="item-title"><span class="select-size">选择规格</span></div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- 数量信息弹出框 -->
+            <div class="spec-popup  popup popup-about">
+                <div class="ctrl-ui-sku">
+                    <div class="sku-pro">
+                        <div>
+                            <img id="productImg">
+                            <div class="sku-pro-info">
+                                <div>
+                                    <input type="hidden" class="specId">
+
+                                    <p class="price">￥<span class="pop-price">124</span></p>
+
+                                    <p class="quantity"><label class="label">库存</label>:<span
+                                            class="pop-stock">2694</span></p>
+                                </div>
+                            </div>
+                            <div class="close-popup"><span class="icon iconfont icon-guanbi"></span></div>
+                        </div>
+                    </div>
+                    <div class="sku-info">
+                        <div class="sku-spec">
+
+                        </div>
+                        <div>
+                            <h2 class="g-num">
+                                <span>购买数量</span>
+
+                                <div class="quantity-info">
+                                    <a class="btn reduce" min="1" id="sub" href="javascript:void(0);">-</a>
+                                    <input type="text" min="1" value="1" id="bookNum">
+                                    <a class="btn plus" max="1366">+</a>
+                                </div>
+                            </h2>
+                        </div>
+                    </div>
+                    <p class="buttons-row p-inner">
+                        <a href="#" id="joinCartBtn">加入购物车</a>
+                        <a href="#" id="purchaseBtn" class="p-pur not">立即购买</a>
+                    </p>
+
+                    <p class="buttons-row p-out">
+                        <a href="#" id="confirmJoin">确定</a>
+                    </p>
+
+                    <p class="buttons-row p-pur">
+                        <a href="#" id="purBuy" data-url="">立即购买</a>
+                    </p>
+                </div>
+            </div>
+             <div class="tabs">
+            </div>
+            
+        </div>
+        <nav class="bar bar-tab" id="tool-bar">
+        
+        </nav>
+    </div>
+</div>
+
+<script type='text/javascript' src='js/lib/zepto.js' charset='utf-8'></script>
+<script type='text/javascript' src='js/lib/idangerous.swiper.min.js' charset='utf-8'></script>
+<script>$.config = {router: false}</script>
+<script type='text/javascript' src='js/lib/sm.js' charset='utf-8'></script>
+<script type='text/javascript' src='js/index.js' charset='utf-8'></script>
+<script>$.init()</script>
+</body>
+</html>
