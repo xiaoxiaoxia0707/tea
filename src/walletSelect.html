@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <title>
+        选择类型
+    </title>
+    <meta content="initial-scale=1, maximum-scale=1" name="viewport">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <link href="css/sm.css" rel="stylesheet" type="text/css">
+    <link href="css/sm-extend.css" rel="stylesheet" type="text/css">
+    <link href="css/layout.css" rel="stylesheet" type="text/css">
+    <link href="css/base.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<style>
+    .page{
+        z-index: 1;
+    }
+    .bar{
+        z-index: 5;
+    }
+    .select-type{
+        height: 76px;
+        width: 100%;
+        background-color: #fff!important ;
+        display: flex;
+        display:-webkit-box;/* android 2.1-3.0, ios 3.2-4.3 */
+        background: url("./images/arrow.png") no-repeat 95% 50% ;
+        background-size:  10px 16px;
+        position: relative;
+    }
+    .select-type .ico{
+        width: 52px;
+        height: 52px;
+        line-height: 76px;
+        margin: 12px 0;
+    }
+    .select-type .main{
+        padding: 10px 10px;
+        flex: 1;
+        -webkit-box-flex: 1.0;
+        margin-left:10px;
+        text-align: left;
+
+    }
+    .select-type .main h1{
+        font-size: 16px;
+        margin-bottom: 5px;
+    }
+    .select-type .main h2{
+        font-size: 14px;
+        color: #b6b6b6;
+    }
+    .cell-left{
+  margin-left: 10px !important;
+}
+.underline{
+height:1px;
+}
+.upline:before,.underline:after{
+  content: '';
+  left: 0;
+  bottom: 0;
+  right: auto;
+  top: auto;
+  height: 1px;
+  width: 100%;
+  background-color: #dadada;
+  display: block;
+  z-index: 1;
+  -webkit-transform: scaleY(0.5);
+  transform: scaleY(0.5);
+  -webkit-transform-origin: 0 0;
+  transform-origin: 0 0;
+}
+</style>
+<div class="page-group">
+    <!--体现方式页面!-->
+    <div class=" page-current" id="pageOne">
+        <!--头部内容 !-->
+        <header class="bar bar-nav">
+            <a class="icon icon-left pull-left" onclick="javascript:history.back(-1);">
+            </a>
+            <h1 class="title">
+                选择类型
+            </h1>
+        </header>
+        <div class="content way-content">
+            <li class="select-type">
+                <img alt="" class="ico cell-left" src="./images/alipay.png">
+                <div class="cell-main main">
+                    <h1>
+                        支付宝
+                    </h1>
+                    <h2>
+                        支付宝转账
+                    </h2>
+                </div>
+                </img>
+            </li>
+            <div class="underline"></div>
+            <li class="select-type">
+                <img alt="" class="ico cell-left" src="./images/weChart.png">
+                <div class="cell-main main">
+                    <h1>
+                        微信
+                    </h1>
+                    <h2>
+                        微信提现
+                    </h2>
+                </div>
+                </img>
+            </li>
+            <div class="underline"></div>
+            <li class="select-type" >
+                <img alt="" class="ico cell-left" src="./images/bank.png">
+                <div class="cell-main main">
+                    <h1>
+                        银行卡
+                    </h1>
+                    <h2>
+                        银行卡提现
+                    </h2>
+                </div>
+                </img>
+            </li>
+            <div class="underline"></div>
+        </div>
+    </div>
+</div>
+
+<script type='text/javascript' src='js/lib/zepto.js' charset='utf-8'></script>
+<script>
+    $.config = {
+        router: false
+    }
+</script>
+<script type='text/javascript' src='js/lib/sm.js' charset='utf-8'></script>
+<script type='text/javascript' src='js/lib/sm-extend.js' charset='utf-8'></script>
+<script>
+
+    $.init();
+</script>
+</body>
+</html>
