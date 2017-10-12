@@ -1,0 +1,249 @@
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <title>个人信息</title>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="stylesheet" type="text/css" href="css/sm.css">
+    <link rel="stylesheet" type="text/css" href="dist/css/sm-extend.css">
+    <link rel="stylesheet" type="text/css" href="css/layout.css">
+    <link rel="stylesheet" type="text/css" href="css/base.css">
+    <style>
+        .button {
+            height: 2.25rem !important;
+            line-height: 2.25rem !important;
+            font-size: 14px;
+        }
+
+        .page {
+            z-index: 1;
+        }
+
+
+        .title {
+            z-index: 3;
+        }
+
+        .select {
+            display: none;
+            position: fixed;
+            z-index: 3;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            -webkit-transform: translate(-50%, -50%);
+            width: 60%;
+            border-radius: 5px;
+            background-color: #fff;
+            padding-bottom: 15px;
+        }
+
+        .select .select-sex {
+            height: 50px;
+            line-height: 50px;
+            display: flex;
+            display: -webkit-box; /* android 2.1-3.0, ios 3.2-4.3 */
+            position: relative;
+        }
+
+        .select h1 {
+            flex: 1;
+            -webkit-box-flex: 1; /* android 2.1-3.0, ios 3.2-4.3 */
+            font-size: 16px;
+        }
+
+        input[type=checkbox] {
+            position: absolute;
+            top: 50%;
+            right: 10px;
+            transform: translateY(-50%);
+            -webkit-transform: translateY(-50%);
+            width: 19px;
+            height: 19px;
+            border: none;
+            background: url("./images/type-check.png");
+            -webkit-appearance: none;
+            background-size: 19px, 19px;
+        }
+
+        input[type=checkbox]:checked {
+            background: url("./images/type-checked.png");
+            background-size: 19px, 19px;
+        }
+
+        .item-inner {
+            display: flex;
+            display: -webkit-flex;
+        }
+
+        .mr0 {
+            max-width: 40px;
+            margin: 0 5px 0 0;
+            padding: 0;
+            text-align: right;
+            font-size: 14px !important;
+            color: #999 !important;
+        }
+        .webuploader-pick{
+            width:100%;
+            padding:0;
+            background: none;
+            color: none;
+        }
+    </style>
+</head>
+<body>
+<div class="page-group">
+    <div class="page page-current">
+        <!--头部部分 !-->
+        <header class="bar bar-nav">
+            <button class="button button-link button-nav pull-left" style=" font-style: 14px; padding-left: 0.75rem;">
+                <span class="icon icon-left"></span>
+            </button>
+            <button class="saveBtn button button-link button-nav pull-right"
+                    style="padding-right: 0.75rem; font-size: 14px;">
+                保存
+            </button>
+            <h1 class="title">个人信息</h1>
+        </header>
+        <div class="content account-content">
+            <div class="card img-card sex-card">
+                <div class="card-content">
+                    <div class="list-block">
+                        <ul id="filePicker">
+                            <li>
+                                <div class="item-link item-content">
+                                    <div class="item-inner">
+                                        <div class="item-title" style="color:#333;">头像</div>
+                                        <div class="item-after img-div">
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="card sex-card">
+                <div class="card-content">
+                    <div class="list-block">
+                        <ul>
+                            <li class="item-link item-content">
+                                <a href="#" class="item-inner ">
+                                    <div class="item-title label">昵称</div>
+                                    <div class="item-input">
+                                        <input type="text" placeholder="" class="name-div"
+                                               style="color: #999;font-size: 14px;text-align: right;">
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="card sex-card">
+                <div class="card-content">
+                    <div class="list-block">
+                        <ul>
+                            <li>
+                                <a href="#" class="item-link item-content" id="sexBtn">
+                                    <div class="item-inner">
+                                        <div class="item-title cell-main">性别</div>
+                                        <input type="text" class="sex mr0" value="" readonly="readonly">
+
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="card sex-card" style="border: none;">
+                <div class="card-content">
+                    <div class="list-block">
+                        <ul>
+                            <li>
+                                <a class="item-link item-content phone-item-link">
+                                    <div class="item-inner">
+                                        <div class="item-title">手机号码</div>
+                                        <div class="item-after phone-div"></div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+             <div class="card sex-card" style="border: none;">
+                <div class="card-content">
+                    <div class="list-block">
+                        <ul>
+                            <li>
+                                <a class="item-link item-content phone-item-link">
+                                    <div class="item-inner">
+                                        <div class="item-title">微信号</div>
+                                        <div class="item-after phone-div"></div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+             <div class="card sex-card" style="border: none;">
+                <div class="card-content">
+                    <div class="list-block">
+                        <ul>
+                            <li>
+                    <a href="#" class="item-link item-content">
+                            <div class="item-media"><i class="icon icon-form-password"></i></div>
+                            <div class="item-inner">
+                                <div class="item-title label">所在地区</div>
+                                <div class="item-input">
+                                    <input type="text" class="r-area" readonly="readonly" id="city-picker" placeholder="" class="">
+                                </div>
+                            </div>
+                       
+                        </a>
+                    </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="expand"></div>
+    <div class="select">
+        <div class="select-sex">
+            <h1 class="cell-left">性别</h1>
+        </div>
+        <li class="select-sex">
+            <h1 class="cell-left">男</h1>
+            <input type="checkbox" class=" manRadio Radiosex" value="1">
+        </li>
+        <div class="upline"></div>
+        <li class="select-sex">
+            <h1 class="cell-left">女</h1>
+            <input type="checkbox" class=" womenRadio Radiosex" value="2">
+        </li>
+    </div>
+</div>
+<script type='text/javascript' src='js/lib/zepto.js' charset='utf-8'></script>
+<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+<script>jQuery.noConflict();</script>
+<script type='text/javascript' src='js/lib/sm.js' charset='utf-8'></script>
+<script type='text/javascript' src='js/lib/sm-extend.js' charset='utf-8'></script>
+ <script>
+        $("#city-picker").cityPicker({
+            toolbarTemplate: '<header class="bar bar-nav">\
+        <button class="button button-link pull-right close-picker">确定</button>\
+        <h1 class="title">选择收货地址</h1>\
+        </header>'
+        });
+    </script>
+     <script type="text/javascript">$.init();</script>
+</body>
+</html>
