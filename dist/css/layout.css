@@ -1,5 +1,6 @@
 /**********************************提现页面begin***********************************/
 * {
+  font-size: 12px;
   padding: 0;
   margin: 0;
   font-weight: normal;
@@ -127,3 +128,169 @@
   background-color: #86bb07;
 }
 /**********************************提现记录页面end**********************************/
+/*******************************申请提现begin********************************/
+.bank-content .type-card {
+  margin-top: 13px;
+}
+.bank-content .type-card .item-title {
+  font-size: 16px !important;
+}
+.bank-content .type-card .item-after {
+  font-size: 14px !important;
+}
+.bank-content .type-card .item-after-type {
+  margin: 0;
+}
+.bank-content .type-card .card-content {
+  border-bottom: 2px solid #eee;
+}
+.bank-content .type-card .card-header:after {
+  -webkit-transform: scaleY(0.5);
+  transform: scaleY(0.5);
+  -webkit-transform-origin: 0 0;
+  transform-origin: 0 0;
+  height: 1px !important;
+  background-color: #d0d5de !important;
+}
+.bank-content .type-card .last-card-header:after {
+  height: 0px !important;
+}
+.bank-content .type-card .item-inner {
+  padding-left: 15px;
+}
+.bank-content .type-card .list-block .item-content {
+  padding: 0;
+}
+.bank-content .type-card .list-block .item-input {
+  margin-top: 0;
+  margin-left: 15px;
+  margin-bottom: 0rem;
+}
+.bank-content .list-block .item-input input {
+  font-size: 14px;
+}
+.bank-content .to-area {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+.bank-content .money-card .card-content .item-title {
+  font-size: 16px !important;
+}
+.bank-content .money-card .item-inner {
+  padding: 10px 0 10px 15px;
+}
+.bank-content .money-card .money-wallet {
+  color: #999;
+}
+.bank-content .money-card .list-block .item-title.label {
+  font-size: 28px !important;
+  width: 1.5rem;
+}
+.bank-content .money-card .list-block {
+  width: 96%;
+  margin: 0 auto;
+}
+.bank-content .money-card .list-block .item-content {
+  padding-left: 8px;
+}
+.bank-content .money-list-block .item-content {
+  border-bottom: 1px  solid #d0d5de;
+}
+.bank-content .money-card .card-header:after {
+  background-color: #ffffff !important;
+}
+.bank-content .money-item-title {
+  color: #999999;
+}
+#pageTwo input[type=radio] {
+  margin-right: 5px;
+}
+#pageTwo .list-block .item-inner:after {
+  background-color: #fff;
+}
+#pageTwo .item-content {
+  border-bottom: 1px solid #dadada;
+}
+#pageTwo .list-block ul:after {
+  background-color: #fff;
+}
+.way-content .item-title {
+  line-height: 3rem;
+}
+.way-content li {
+  border-bottom: 1px solid #dadada;
+}
+.way-content .list-block ul:after {
+  background-color: #fff;
+}
+.way-content .way-item-title {
+  line-height: 1.5rem;
+  color: #777777;
+}
+.wallet-content .wallet-card {
+  height: 7rem;
+  margin: 0;
+  background-color: #00b0ec;
+}
+.wallet-content .wallet-card h3 {
+  text-align: center;
+  margin: 0;
+  padding-top: 6px;
+  padding-bottom: 10px;
+  font-size: 14px;
+  color: #ffffff;
+  font-weight: normal;
+}
+.wallet-content .wallet-card h1 {
+  text-align: center;
+  margin: 10px 0 0 0;
+  padding: 0;
+  color: #ffffff;
+  font-size: 40px;
+}
+.type-card .list-block {
+  width: 100%;
+  padding: 0 0.75rem;
+}
+.wallet-content .information-card {
+  border-top: 1px solid #ddd;
+  margin-top: 0;
+}
+.wallet-content .information-card.way-item-title {
+  font-size: 16px;
+}
+.wallet-content .information-card li {
+  border-bottom: 1px solid #dadada;
+}
+.wallet-content .information-card ul:first-child {
+  color: #ffffff;
+  background-color: #00b0ec;
+}
+.wallet-content .information-card .information-item-title {
+  font-size: 14px;
+}
+.wallet-content .information-card .item-subtitle {
+  font-size: 12px;
+  color: #999999;
+}
+.wallet-content .status-item-after {
+  font-size: 14px;
+}
+.cashBtn {
+  margin: 80px auto 0!important;
+}
+/*关于底部绑定手机按钮*/
+.bindBtn {
+  width: 90%;
+  margin: 24px auto 0;
+}
+.bindBtn .button {
+  border-radius: 4px;
+  background: #ddc27b;
+  height: 40px;
+  line-height: 40px;
+  font-size: 16px;
+  border: 1px solid #ddc27b;
+  color: #fff;
+}
+/*******************************申请提现end********************************/
