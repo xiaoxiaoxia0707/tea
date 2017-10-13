@@ -1,0 +1,404 @@
+/**********************************全部订单页面 begin**********************************/
+.allOrder-content .tabs {
+  margin-top: 10px;
+}
+// .allOrder-content .o-list-total .o-list-div div {
+//   margin-top: 5px;
+// }
+.allOrder-content .o-list-total .o-list-div {
+  height: 40px;
+}
+.allOrder-content .o-list-total .o-list-div:last-child {
+  padding: 0;
+  height: 2.5rem;
+}
+.allOrder-content .paymentBtn {
+  border: 1px solid #ff5000;
+  font-size: 14px;
+  letter-spacing: 2px;
+  border-radius: 25px;
+  display: block;
+  text-align: center;
+  float: right;
+  width: 90px;
+  height: 1.5rem;
+  margin-top: 0.4rem;
+  line-height: 1.5rem;
+  color: #ff5000;
+}
+.allOrder-content .cancelBtn {
+  border: 1px solid #999;
+  font-size: 14px;
+  letter-spacing: 2px;
+  border-radius: 25px;
+  display: block;
+  text-align: center;
+  float: right;
+  width: 90px;
+  height: 1.5rem;
+  margin-right: 8px;
+  margin-top: 0.4rem;
+  line-height: 1.5rem;
+  color: #999;
+}
+/*订单详情*/
+.goods-pic{
+  width: 75px;
+  height: 75px;
+}
+.o-list li{
+  padding: 0;
+}
+// .row{
+//   height: 100px;
+// }
+.col-80{
+  color: #c1c1c1;
+}
+
+.p-list {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  font-size: 14px;
+  color: #000;
+  margin-bottom: 3px;
+}
+.pspec{
+  height: auto;
+  overflow: hidden;
+}
+.totalprice{
+  height: 35px!important;
+}
+/**********************************全部订单页面 end**********************************/
+/*******************************订单详情begin********************************/
+* {
+  font-size: 12px;
+}
+.page,
+.page-group {
+  background: #f9f9f9;
+}
+.o-list-item {
+  background: #FFFFFF;
+}
+.main {
+  height: 100%;
+  overflow-y: scroll;
+  margin-top: 45px;
+  padding-bottom: 125px;
+}
+.o-s-head {
+  padding: 10px;
+  text-align: left;
+  background: #FFFFFF;
+  font-size: 14px;
+}
+.o-s-head i,
+.o-s-head span {
+  display: inline-block;
+  vertical-align: middle;
+}
+.o-s-head span:nth-of-type(1) {
+  margin: 0 5px;
+}
+.o-s-head .icon-right {
+  color: #333333;
+}
+.o-list {
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+  background: #FFFFFF;
+}
+.o-list .col-30 {
+  word-break: break-all;
+  float: right;
+}
+.o-list .s-price {
+  float: left;
+  
+  color: #ff5757;
+  font-size: 14px;
+}
+.o-list .s-count {
+  float: right;
+}
+.p-list {
+  margin-bottom: 6px;
+}
+.o-list .s-price:before {
+  content: '¥';
+}
+.o-list .s-count:before {
+  content: 'x';
+}
+.row .col-20 {
+  margin-top: 10px;
+  width: 20%;
+  margin-left: 0;
+}
+.row .col-80 {
+  margin-top: 10px;
+  width: 70%;
+  margin-left: 4%;
+}
+.o-list li:before,
+.o-list-total .o-list-div:before {
+  content: '';
+  left: 0;
+  bottom: 0;
+  right: auto;
+  top: auto;
+  height: 1px;
+  width: 100%;
+  background-color: #d0d5de;
+  display: block;
+  z-index: 15;
+  -webkit-transform: scaleY(0.5);
+  transform: scaleY(0.5);
+  -webkit-transform-origin: 0 0;
+  transform-origin: 0 0;
+}
+.o-list li {
+  padding: 0 0 10px 0;
+  margin: 0 4%;
+  width: 92%;
+}
+/*总价*/
+.o-list-total {
+  text-align: left;
+  background: #FFFFFF;
+  width: 100%;
+}
+.o-list-total .o-list-div {
+  padding: 0 0 10px 0;
+  margin: 0 4%;
+}
+// .o-list-total .o-list-div div {
+//   margin-top: 10px;
+// }
+.o-total-Price {
+  color: #ff5757;
+  float: right;
+  font-size: 14px;
+}
+.o-total-Price:before {
+  content: "¥";
+}
+/*地址*/
+.address {
+  padding: 10px 0;
+  background: #FFFFFF;
+}
+.address .col-20 a {
+  display: block;
+  padding: 2px 10px;
+  color: #FFFFFF;
+  line-height: 20px;
+  text-align: center;
+  border-radius: 4px;
+}
+.address .add-a,
+.address .add-c {
+  background: #2cbb0c;
+}
+.address .add-c {
+  margin-bottom: 5px;
+}
+.address .add-e {
+  background: #f77523;
+}
+.address p {
+  margin-top: 0;
+  margin-bottom: 2px;
+}
+.address p span {
+  padding-right: 5px;
+}
+.img-div {
+  width: 100%;
+  height: 4px;
+  margin-bottom: 10px;
+}
+.address .list-block .item-content {
+  padding: 0;
+}
+.address .item-subtitle {
+  color: #555555!important;
+  font-size: 12px;
+  margin-top: 4px;
+}
+/*支付按钮*/
+.pay-btn {
+  display: block;
+  width: 40%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  line-height: 59px;
+  font-size: 16px;
+  color: #FFFFFF;
+  background: #ff6600;
+  text-align: center;
+}
+.cancel-btn {
+  display: block;
+  width: 80%;
+  margin: 20px auto 0;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #FFFFFF;
+  background: #ff0000;
+  border-radius: 4px;
+  text-align: center;
+}
+/*切换显示地址 判断有无默认地址*/
+.f-show {
+  display: inherit;
+}
+.a-show {
+  display: none;
+}
+/*抵扣*/
+.discount-box {
+  background: #fff;
+  padding: 5px 2%;
+  margin-top: 10px;
+}
+.discount-box p {
+  color: #999;
+  border-bottom: 1px solid #dadada;
+  margin: 0;
+  padding: 10px 0;
+}
+.discount-box input {
+  width: 100%;
+  height: 40px;
+  border: none;
+  color: #999;
+}
+/*邮费*/
+.postage {
+  font-size: 14px;
+  text-align: left;
+  padding: 10px;
+  background: #fff;
+  margin-top: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+.postage > span {
+  font-size: 14px;
+}
+.postage > span i {
+  font-style: normal;
+  color: #ff0000;
+  font-size: 14px;
+}
+.postage p {
+  color: #999;
+  margin: 0;
+  font-size: 12px;
+}
+//订单详情的底部
+.payment-bar-tab h4 {
+  font-size: 14px;
+  font-weight: normal;
+  float: left;
+  margin: 0  0 0 15px;
+  line-height: 2.5rem;
+}
+.payment-bar-tab h4 span {
+  font-size: 14px;
+  color: #e43737;
+}
+.payment-bar-tab .accountBtn {
+  font-size: 16px;
+  letter-spacing: 2px;
+  border-radius: 25px;
+  display: block;
+  text-align: center;
+  float: right;
+  margin-right: 0.75rem;
+  width: 100px;
+  height: 1.5rem;
+  margin-top: 0.55rem;
+  line-height: 1.5rem;
+  background-color: #ddc27b;
+  color: #fff;
+}
+.payment-bar-tab .cancelBtn {
+  border: 1px solid #999999;
+  font-size: 14px;
+  letter-spacing: 2px;
+  border-radius: 25px;
+  display: block;
+  text-align: center;
+  float: right;
+  width: 90px;
+  height: 1.5rem;
+  margin-top: 0.55rem;
+  line-height: 1.5rem;
+  color: #999999;
+}
+.payment-bar-tab .paymentBtn {
+  margin-left: 8px;
+  font-size: 14px;
+  letter-spacing: 2px;
+  border-radius: 25px;
+  display: block;
+  text-align: center;
+  float: right;
+  margin-right: 0.75rem;
+  width: 90px;
+  height: 1.5rem;
+  margin-top: 0.55rem;
+  line-height: 1.5rem;
+  background-color: #ddc27b;
+  color: #fff;
+}
+#tool-bar{
+            background-color: #fff;
+        }
+        .orderNum {
+          margin-top: 10px;
+        & .list-block .item-inner:after,.list-block ul:before {
+          height:0;
+    }
+    & .list-block ul:after{
+         content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: auto;
+  right: auto;
+  height: 1px;
+  width: 100%;
+  background-color: #e7e7e7;
+  display: block;
+  z-index: 15;
+  -webkit-transform-origin: 50% 0%;
+  transform-origin: 50% 0%; 
+    }
+    & li{
+        height:50px;
+        padding:0.75rem 0;
+        margin: 0 0.75rem;
+    }
+    & .cart-title{
+        line-height: 20px;
+        float: left;
+        font-size: 14px;
+    }
+    & .cart-after{
+        line-height: 20px;
+        margin-left: 24px;
+        float: left;
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,98 @@
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <title>所有订单</title>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="stylesheet" type="text/css" href="css/sm.css">
+    <link rel="stylesheet" type="text/css" href="css/sm-extend.css">
+    <link rel="stylesheet" type="text/css" href="css/print.css">
+    <link rel="stylesheet" type="text/css" href="css/base.css">
+     <link rel="stylesheet" href="http://at.alicdn.com/t/font_fzkvbtj540w6zuxr.css" />
+    <style>
+     .row .col-20 img{
+            width: 75px;
+        }
+    </style>
+</head>
+
+<body>
+<div class="page-group">
+    <div class="page">
+        <!--头部内容 !-->
+        <header class="bar bar-nav">
+            <a class="icon icon-left pull-left"></a>
+
+            <h1 class="title">全部订单</h1>
+        </header>
+        <div class="content allOrder-content">
+            <!--tab栏 !-->
+            <div class="buttons-tab">
+                <input type="hidden" id="refreshed" value="no">
+                <a id="all-tab-btn" class="tab-link  button active" data-status="0">全部</a>
+                <a id="payment-tab" class="tab-link  button" data-status="init">待付款</a>
+                <a id="send-tab" class="tab-link button" data-status="pass">待发货</a>
+                <a id="harvest-tab" class="tab-link button" data-status="send">待收货</a>
+                <a id="complete-tab" class="tab-link button" data-status="finish">已完成</a>
+            </div>
+            <div class="tabs">
+                <div id="all-tab" class="tab active" data-url="">
+                    <div class="o-list-content">
+                <div class="o-list-item">
+                <div class="o-s-head"><i class="iconfont icon-shangdian"></i> <span>佰信恒通商城</span> <span
+                class="icon icon-right"></span><span
+                style="float: right;font-size: 14px;color: #ff5000">等待买家付款</span></div>
+                <ul class="o-list">
+                <li class="row">
+                <div class="col-20"><img
+                src="https://gd3.alicdn.com/imgextra/i2/0/TB1pKptXsrHK1Jjy1zjXXanYVXa_!!0-item_pic.jpg_400x400.jpg_.webp"/>
+                </div>
+                <div class="col-80">
+                <div class="p-list">部分现货【王小毒】 琴心 圆头浅口绑带粗跟单鞋子女8.31</div>
+                <div class="pspec">
+                <div class="s-price">25.00</div>
+                <div class="s-count">3</div>
+                </div>
+                </div>
+                </li>
+                <li class="row">
+                <div class="col-20"><img
+                src="https://gd3.alicdn.com/imgextra/i2/0/TB1pKptXsrHK1Jjy1zjXXanYVXa_!!0-item_pic.jpg_400x400.jpg_.webp"/>
+                </div>
+                <div class="col-80">
+                <div class="p-list">部分现货【王小毒】 琴心 圆头浅口绑带粗跟单鞋子女8.31</div>
+                <div class="pspec">
+                <div class="s-price">25.00</div>
+                <div class="s-count">3</div>
+                </div>
+                </div>
+                </li>
+                </ul>
+                </div>
+                <div class="o-list-total">
+                <div class="o-list-div">
+                <div>
+                <div style="float: right;line-height: 50px;">共3件商品<span style="margin-left: 4px;line-height: 50px;">合计：<span
+                class="o-total-Price">255.02</span></span></div>
+                </div>
+                </div>
+                </div>
+                <div class="o-list-total">
+                <div class="o-list-div">
+                <span data-url="" class="paymentBtn">付款</span>
+                <span data-url="" class="cancelBtn">取消订单</span>
+                </div>
+                </div>
+                </div> 
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script type='text/javascript' src='js/lib/zepto.js' charset='utf-8'></script>
+<script type='text/javascript' src='js/lib/sm.js' charset='utf-8'></script>
+<script type='text/javascript' src='js/lib/sm-extend.js' charset='utf-8'></script>
+</body>
+
+</html>
