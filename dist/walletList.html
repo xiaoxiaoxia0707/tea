@@ -2,7 +2,7 @@
 
 <head>
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-    <title>提现</title>
+    <title>账户余额</title>
     <meta name="viewport" content="initial-scale=1, maximum-scale=1">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
@@ -26,14 +26,15 @@
 
     .cash-register {
         width: 95%;
+        margin-left: 15px;
         font-size: 14px;
         height: 40px;
         line-height: 40px;
     }
 
     .box-inf:nth-child(n+1) {
-        height: 40px;
-        line-height: 40px;
+        height: 66px;
+        line-height: 66px;
     }
 
     .content {
@@ -41,6 +42,16 @@
     }
     .list-block ul {
         overflow: hidden;}
+        .bar:after{
+             -webkit-transform: scaleY(0.5);
+  transform: scaleY(0.5);
+        }
+        .list-block.media-list .item-inner{
+            padding:0;
+        }
+        .list-block .item-inner:after{
+            height:0;
+        }
 </style>
 <body>
 <div class="page-group">
@@ -49,7 +60,7 @@
         <!--头部内容 !-->
         <header class="bar bar-nav">
             <a class="icon icon-left pull-left" ></a>
-            <h1 class="title">提现</h1>
+            <h1 class="title">账户余额</h1>
         </header>
         <div class="content way-content">
             <div class="bg-icon">
@@ -61,19 +72,53 @@
                         class="icon icon-right  arrow"></i></div>
             </div>
             <div class="list-block media-list">
-
                     <li>
                         <div class="cash-register cell-left">
                             提现记录
                         </div>
                     </li>
+                    <div class="underline"></div>
                     <div class="All-list">
+                            <li class="box-inf">
+                                <img src="./images/shop1.png">
+                                <div class="item-inner">
+                                    <div class="li-title">用户肖**安下单购买商品</div>
+                                    <div class="subtitle">2017-10-12 12：12</div>
+                                </div>
+                                <div class="after-money">+28.00</div>
+                            </li>
+                            <div class="underline"></div>
+                             <li class="box-inf">
+                                <img src="./images/bank1.png">
+                                <div class="item-inner">
+                                    <div class="li-title">用户肖**安下单购买商品</div>
+                                    <div class="subtitle">2017-10-12 12：12</div>
+                                </div>
+                                <div class="after-money">+28.00</div>
+                            </li>
+                            <div class="underline"></div>
+                             <li class="box-inf">
+                                <img src="./images/zhifubao1.png">
+                                <div class="item-inner">
+                                    <div class="li-title">用户肖**安下单购买商品</div>
+                                    <div class="subtitle">2017-10-12 12：12</div>
+                                </div>
+                                <div class="after-money">+28.00</div>
+                            </li>
+                            <div class="underline"></div>
+                             <li class="box-inf">
+                                <img src="./images/weChart1.png">
+                                <div class="item-inner">
+                                    <div class="li-title">用户肖**安下单购买商品</div>
+                                    <div class="subtitle">2017-10-12 12：12</div>
+                                </div>
+                                <div class="after-money">+28.00</div>
+                            </li>
+                            <div class="underline"></div>
 
                     </div>
 
                     </div>
-
-
             </div>
         </div>
     </div>

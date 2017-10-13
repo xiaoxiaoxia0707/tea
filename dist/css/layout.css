@@ -1,13 +1,13 @@
 /**********************************提现页面begin***********************************/
 * {
-  font-size: 12px;
+  font-size: 14px;
   padding: 0;
   margin: 0;
   font-weight: normal;
   list-style: none;
 }
 .way-content .bg-icon {
-  background: url(/resource/front/dist/images/bg-3.png) no-repeat;
+  background: url("../images/bg-2.png") no-repeat;
   background-size: cover;
   width: 100%;
   overflow: hidden;
@@ -217,9 +217,6 @@
 .way-content .item-title {
   line-height: 3rem;
 }
-.way-content li {
-  border-bottom: 1px solid #dadada;
-}
 .way-content .list-block ul:after {
   background-color: #fff;
 }
@@ -292,6 +289,47 @@
   font-size: 16px;
   border: 1px solid #ddc27b;
   color: #fff;
+}
+.box-inf img {
+  height: 50px;
+  width: 50px;
+}
+.box-inf {
+  padding: 8px 15px;
+}
+.box-inf .item-inner .li-title,
+.box-inf .item-inner .subtitle {
+  height: 25px;
+  line-height: 25px;
+}
+.box-inf .item-inner .subtitle {
+  color: #999;
+}
+.box-inf .item-inner {
+  margin-left: 20px;
+}
+.box-inf .after-money {
+  line-height: 50px;
+}
+.underline {
+  height: 1px;
+}
+.upline:before,
+.underline:after {
+  content: '';
+  left: 0;
+  bottom: 0;
+  right: auto;
+  top: auto;
+  height: 1px;
+  width: 100%;
+  background-color: #dadada;
+  display: block;
+  z-index: 1;
+  -webkit-transform: scaleY(0.5);
+  transform: scaleY(0.5);
+  -webkit-transform-origin: 0 0;
+  transform-origin: 0 0;
 }
 /*******************************申请提现end********************************/
 /**********************************个人信息页面begin**********************************/
