@@ -302,3 +302,105 @@
   color: #fff;
 }
 /*******************************申请提现end********************************/
+/**********************************个人信息页面begin**********************************/
+.account-content .sex-card {
+  margin: 0;
+
+}
+.account-content .sex-card:after {
+  content: '';
+  left: 0;
+  bottom: 0;
+  right: auto;
+  top: auto;
+  height: 1px;
+  width: 100%;
+  background-color: #dadada;
+  display: block;
+  z-index: 15;
+  -webkit-transform: scaleY(0.5);
+  transform: scaleY(0.5);
+  -webkit-transform-origin: 0 0;
+  transform-origin: 0 0;
+}
+.account-content .sex-card .item-title {
+  font-size: 16px;
+}
+.account-content .img-card .list-block .item-inner {
+  min-height: 3rem;
+}
+.account-content .img-card .list-block .item-after {
+  max-height: 2.8rem;
+}
+.account-content .sex-card img {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  border: 1px solid rgba(171,171,171,0.5);
+}
+.account-content .sex-card .item-after {
+  margin: 0;
+  font-size: 14px;
+  color: #999;
+}
+.select {
+            display: none;
+            position: fixed;
+            z-index: 3;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            -webkit-transform: translate(-50%, -50%);
+            width: 60%;
+            border-radius: 5px;
+            background-color: #fff;
+            padding-bottom: 15px;
+        }
+
+        .select .select-sex {
+            height: 50px;
+            line-height: 50px;
+            display: flex;
+            display: -webkit-box; /* android 2.1-3.0, ios 3.2-4.3 */
+            position: relative;
+        }
+
+        .select h1 {
+            flex: 1;
+            -webkit-box-flex: 1; /* android 2.1-3.0, ios 3.2-4.3 */
+            font-size: 16px;
+        }
+
+        input[type=checkbox] {
+            position: absolute;
+            top: 50%;
+            right: 10px;
+            transform: translateY(-50%);
+            -webkit-transform: translateY(-50%);
+            width: 19px;
+            height: 19px;
+            border: none;
+            background: url("./images/type-check.png");
+            -webkit-appearance: none;
+            background-size: 19px, 19px;
+        }
+
+        input[type=checkbox]:checked {
+            background: url("./images/type-checked.png");
+            background-size: 19px, 19px;
+        }
+.mr0 {
+            max-width: 40px;
+            margin: 0 5px 0 0;
+            padding: 0;
+            text-align: right;
+            font-size: 14px !important;
+            color: #999 !important;
+        }
+        .webuploader-pick{
+            width:100%;
+            padding:0;
+            background: none;
+            color: none;
+        }
+/**********************************个人信息页面end**********************************/
