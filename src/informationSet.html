@@ -1,0 +1,62 @@
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <title>支出详情</title>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="stylesheet" type="text/css" href="css/sm.css">
+    <link rel="stylesheet" type="text/css" href="css/idangerous.swiper.css">
+    <link rel="stylesheet" type="text/css" href="css/base.css">
+    <link rel="stylesheet" href="css/themes.css">
+
+</head>
+    <body>
+
+<div class="page-group">
+    <div class="page page-current">
+       <header class="bar bar-nav">
+         <a href="#" class="icon icon-left pull-left"></a>
+        <h1 class="title">收入详情</h1>
+        <span class="pull-right title-save cell-right">保存</span>
+       </header>
+       <li class="inf-pic flex-box">
+         <div class="inf-text cell-main cell-left">店铺头像</div>
+         <img src="./images/shop-ico.png" alt="" class="inf-icon">
+         <img src="./images/arrowRight.png" alt="" class="inf-arrow cell-right">
+       </li>
+       <div class="underline"></div>
+       <li class="inf-items flex-box">
+         <div class="inf-text cell-left">店铺名称</div>
+         <input type="text" class="inf-detail cell-main" placeholder="请输入店铺名称">
+       </li>
+        <div class="underline"></div>
+       <li class="inf-items flex-box">
+         <div class="inf-text cell-left">店铺介绍</div>
+         <input type="text" class="inf-detail cell-main" placeholder="请输入店铺介绍">
+       </li>
+      <div class="shopcover ">
+        店铺封面
+        <div class="upload ">
+          <img src="./images/add.png" alt="" class="cover-ico">
+          <span class="cover-text">上传封面</span>
+        </div>
+      </div>
+    </div> 
+ </div>
+<script type='text/javascript' src='js/lib/zepto.js' charset='utf-8'></script>
+<script type='text/javascript' src='js/lib/idangerous.swiper.min.js' charset='utf-8'></script>
+<script>
+    $.config = {
+        router: false
+    }
+</script>
+<script type='text/javascript' src='js/lib/sm.js' charset='utf-8'></script>
+<script type='text/javascript' src='js/index.js' charset='utf-8'></script>
+<script>
+    $.init();
+</script>
+</body>
+
+</html>
