@@ -1,7 +1,7 @@
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-    <title>评价列表</title>
+    <title>分销订单</title>
     <meta name="viewport" content="initial-scale=1, maximum-scale=1">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
@@ -17,6 +17,9 @@
         .o-list-content{
             margin-bottom: 10px;
         }
+        .row .col-80{
+
+        }
     </style>
 </head>
 
@@ -27,14 +30,15 @@
         <header class="bar bar-nav">
             <a class="icon icon-left pull-left"></a>
 
-            <h1 class="title">全部订单</h1>
+            <h1 class="title">分销订单</h1>
         </header>
         <div class="content allOrder-content">
             <!--tab栏 !-->
             <div class="buttons-tab">
-                <a id="all-tab-btn" class="tab-link  button active" data-status="0">全部</a>
-                <a id="begin-tab" class="tab-link  button" data-status="init">未评价</a>
-                <a id="already-tab" class="tab-link button" data-status="pass">已评价</a>
+                 <a id="all-tab-btn" class="tab-link  button active" data-status="0">全部</a>
+                <a id="send-tab" class="tab-link button" data-status="pass">待发货</a>
+                <a id="harvest-tab" class="tab-link button" data-status="send">待收货</a>
+                <a id="complete-tab" class="tab-link button" data-status="finish">已完成</a>
             </div>
             <div class="tabs">
                 <div id="all-tab" class="tab active" data-url="">
@@ -71,10 +75,17 @@
                 </div>
                 <div class="o-list-total">
                 <div class="o-list-div">
-                <span data-url="" class="paymentBtn">去评价</span>
+                <div>
+                <div style="float: right;line-height: 50px;">共3件商品<span style="margin-left: 4px;line-height: 50px;">合计：<span
+                class="o-total-Price">255.02</span></span></div>
                 </div>
                 </div>
-                </div>  
+                </div>
+                <div class="o-list-total">
+                <div class="o-list-div">
+                <span data-url="" class="paymentBtn">去发货</span>
+                <span data-url="" class="cancelBtn">查看详情</span>
+                </div>
                 </div>
                 </div> 
                 </div>
