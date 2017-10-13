@@ -19,17 +19,18 @@ a {
 }
 
 .flex-box {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: flex;
-    display: flex;
+display: -webkit-box; 
+display: -moz-box; 
+display: -ms-flexbox; 
+display: -webkit-flex;
+display: flex;
 }
 
 .cell-main {
-    -moz-box-flex: 1;
-    -webkit-box-flex: 1;
-    box-flex: 1;
-    flex: 1;
+-webkit-box-flex:1;
+-webkit-flex:1;
+-ms-flex:1;
+flex:1;
 }
 
 .cell-right {
@@ -692,5 +693,62 @@ margin-right: 0.25rem;
     .all-text{
         display: inline-block;
         font-size: 16px;
+    }
+}
+// 收入详情
+.income{
+    &-header{
+       margin-top: 3rem; 
+       height: 1.95rem;
+       line-height: 1.95rem;
+       width: 100%;
+    }
+    &-rong{
+        width: 35%;
+        text-align: right;
+    }
+    &-ico{
+    width: 1.95rem;
+    height: 1.95rem;
+    margin-right: 0.25rem;
+    }
+    &-detail{
+        display: inline-block;
+        font-size: 14px;
+        font-weight: bold;
+    }
+    &-money{
+        display: block;
+        font-size: 35px;
+        font-weight:bold;
+        text-align: center;
+        margin: 0.7rem 0 0.5rem;
+    }
+    &-state{
+        display: block;
+        color: #f85c42;
+        font-size: 14px;
+        text-align: center;
+        margin-bottom: 0.8rem;
+    }
+    &-items{
+        height: 1.9rem;
+        line-height: 1.9rem;
+        width: 100%;
+    }
+    &-text{
+      font-size:14px; 
+      color: #9f9f9f;
+    }
+    &-inf{
+        text-align: right;
+        font-size: 14px;
+        margin-left: 1.0rem;
+        font-weight: bold;
+    }
+    &-box{
+       height: auto;
+       width: 100%;
+       padding: 0.75rem 0;
     }
 }
