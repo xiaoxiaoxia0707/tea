@@ -788,3 +788,89 @@ p {
   color: #999999;
   font-size: 18px;
 }
+.comment-header {
+  padding-top: 0.5rem;
+  margin-top: 2.3rem;
+  background-color: #fff;
+  width: 100%;
+  height: 4.45rem;
+}
+.comment-left {
+  float: left;
+  width: 3.15rem;
+  height: 3.15rem;
+  border-radius: 50%;
+}
+.comment-main {
+  margin-left: 4.3rem;
+  margin-right: 1.0rem;
+}
+.comment-title {
+  font-size: 14px;
+  margin-bottom: 0.5rem;
+}
+.comment-num {
+  color: #999999;
+  font-size: 12px;
+}
+.comment-body {
+  margin-top: 0.75rem;
+  width: 100%;
+  height: auto;
+  background-color: #fff;
+}
+.comment-text {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0.5rem 0 0 0.85rem;
+  height: 5.9rem;
+  font-size: 16px;
+  border: none;
+}
+.pic-box {
+  width: 100%;
+  height: auto;
+  padding-bottom: 1.2rem;
+  margin-left: 0.7rem;
+}
+.pic-box .pic-item {
+  height: 4rem;
+  width: 4rem;
+  border: 0.1rem dashed #999;
+  border-radius: 0.1rem;
+}
+.pic-box .pic-ico {
+  display: block;
+  width: 1.1rem;
+  height: 1.0rem;
+  margin: 0.9rem auto 0.4rem;
+}
+.pic-box .pic-text {
+  color: #999;
+  text-align: center;
+  font-size: 12px;
+}
+.pic-check {
+  height: 2.0rem;
+  line-height: 2.0rem;
+  width: 100%;
+}
+.pic-check .checkbox {
+  display: none;
+}
+.pic-check .checkbox + .ico {
+  display: inline-block;
+  background: url(../images/type-checked.png) no-repeat;
+  background-size: 18px 18px;
+  width: 0.9rem;
+  height: 0.9rem;
+  vertical-align: middle;
+}
+.pic-check .checkbox:checked + .ico {
+  background: url(../images/checked.png) no-repeat;
+  background-size: 0.9rem 0.9rem;
+}
+.pic-check  .pic-select {
+  font-size: 14px;
+  margin-left: 0.3rem;
+}
