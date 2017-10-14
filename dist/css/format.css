@@ -1,0 +1,69 @@
+.hui {
+  color: #999999;
+}
+.brown {
+  color: #8a4f14;
+}
+.yellow {
+  color: #e28b48;
+}
+.orange {
+  color: #c83f10;
+}
+.red {
+  color: #b11108;
+}
+.purple {
+  color: #780044;
+}
+.vip-body {
+  margin-top: 2.3rem;
+  tbox-sizing: border-box;
+  padding: 0.75rem 0.4em 1rem;
+  width: 100%;
+  height: auto;
+}
+.vip-grade {
+  width: 100%;
+  padding: 0.65rem 0;
+  background-color: #fff;
+}
+.vip-text {
+  font-size: 14px;
+}
+.vip-ico {
+  display: inline-block;
+  width: 0.8rem;
+  height: 0.9rem;
+  margin-right: 0.5rem;
+  vertical-align: middle;
+}
+.vip-join {
+  display: inline-block;
+  font-size: 12px;
+  text-indent: 0.5rem;
+}
+.vip-left {
+  float: left;
+}
+.vip-btn {
+  display: inline-block;
+  width: 4.05rem;
+  height: 1.5rem;
+  line-height: 1.5rem;
+  background-color: #ddc27b;
+  color: #fff;
+  font-size: 14px;
+  text-align: center;
+  border: none;
+  border-radius: 0.3rem;
+}
+.vip-tip {
+  display: block;
+  font-size: 12px;
+  text-indent: 1.9rem;
+}
+.vip-now {
+  background-color: transparent;
+  color: #ddc27b;
+}
