@@ -38,7 +38,45 @@
   -webkit-transform-origin: 0 0;
   transform-origin: 0 0;
 }
-
+.delBtn{
+  float: left;
+  text-align: center;
+  font-size:16px; 
+  display: block;
+  line-height: 2.5rem;
+  height:2.5rem;
+  background-color: #ee6833;
+  color: #fff;
+  width: 90px;
+}
+.allCheckbox{
+  line-height: 2.5rem;
+  height:2.5rem;
+  font-size:16px; 
+ float: right;
+ padding-right: 0.75rem;
+}
+.allCheckbox input{
+  margin-top: 14px;
+  margin-left: 6px;
+}
+.s-all{
+  float: right;
+}
+input[type=checkbox] {
+  width: 18px;
+  height: 18px;
+  border: none;
+  background: url("./images/type-check.png") no-repeat;
+  background-size: 18px, 18px;
+  -webkit-appearance: none;
+  vertical-align: top;
+  margin-right: 5px;
+}
+input[type=checkbox]:checked {
+  background: url("./images/type-checked.png") no-repeat;
+  background-size: 18px, 18px;
+}
     </style>
 </head>
 <body>
@@ -59,11 +97,14 @@
          <div class="content search-content">
                     <ul class="o-list"> <li class="row"><div class="col-20"> <img src="https://gd3.alicdn.com/imgextra/i2/0/TB1pKptXsrHK1Jjy1zjXXanYVXa_!!0-item_pic.jpg_400x400.jpg_.webp" /></div><div class="col-80" ><div class="p-list">部分现货【王小毒】 琴心  圆头浅口绑带粗跟单鞋子女8.31</div><div class="pspec"><div class="s-price">25.00</div><div class="s-payment">149人付款</div> <img class="s-count" src="./images/dian.png"></div></div>  </li>
                     <div class="downMarking"></div>
-                    <li class="row"><div class="col-20"> <img src="https://gd3.alicdn.com/imgextra/i2/0/TB1pKptXsrHK1Jjy1zjXXanYVXa_!!0-item_pic.jpg_400x400.jpg_.webp" /></div><div class="col-80" ><div class="p-list">部分现货【王小毒】 琴心  圆头浅口绑带粗跟单鞋子女8.31</div><div class="pspec"><div class="s-price">25.00</div><img class="s-count" src="./images/dian.png"></div></div>  </li> </ul> 
+                    <li class="row"><div class="col-20"> <img src="https://gd3.alicdn.com/imgextra/i2/0/TB1pKptXsrHK1Jjy1zjXXanYVXa_!!0-item_pic.jpg_400x400.jpg_.webp" /></div><div class="col-80" ><div class="p-list">部分现货【王小毒】 琴心  圆头浅口绑带粗跟单鞋子女8.31</div><div class="pspec"><div class="s-price">25.00</div><input type="checkbox" class="s-all" name="checkbox" /> </div></div>  </li> </ul> 
                 
         </div>
-        <nav class="">
-            
+       <nav class="bar bar-tab payment-bar-tab" id="tool-bar">
+            <span data-url="" class="delBtn">删除</span> 
+            <label class="allCheckbox">
+            全选<input type="checkbox"  name="checkbox" /> 
+            </label>
         </nav>
     </div>
 </div>

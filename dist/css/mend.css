@@ -6,22 +6,4 @@
   font-weight: normal;
   list-style: none;
 }
-.label-switch {
-  float: right;
-}
-.label-switch input[type="checkbox"]:checked + .checkbox {
-  background: #ddc27b;
-}
-.label-switch .checkbox {
-  background: #999999;
-  height: 1.4rem;
-  width: 2.6rem;
-}
-.label-switch .checkbox:after {
-  height: 1.15rem;
-  width: 1.15rem;
-}
-.list-block .item-media + .item-inner {
-  margin: 0;
-}
 /**********************消息提示设置end**********************/
