@@ -112,3 +112,42 @@
 .tip-copy {
   margin-top: 8.5rem;
 }
+.open-header {
+  display: block;
+  width: 100%;
+  height: 11.05rem;
+  margin-bottom: 0.5rem;
+}
+.open-item {
+  box-sizing: border-box;
+  padding: 0.4rem;
+  width: 100%;
+  height: 2.85rem;
+  background-color: #fff;
+}
+.open-ico {
+  width: 2.15rem;
+  height: 2.15rem;
+  float: left;
+}
+.open-main {
+  margin-left: 3rem;
+}
+.open-name {
+  font-size: 14px;
+}
+.open-detail {
+  font-size: 12px;
+}
+.open-btn {
+  display: block;
+  margin: 1.1rem auto 0;
+  width: 80%;
+  height: 2.05rem;
+  line-height: 2.05rem;
+  text-align: center;
+  border-radius: 0.2rem;
+  background: #ddc27b;
+  color: #fff;
+  font-size: 0.7rem;
+}
