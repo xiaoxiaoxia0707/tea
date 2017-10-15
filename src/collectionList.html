@@ -1,0 +1,83 @@
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <title>我的收藏</title>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="stylesheet" type="text/css" href="css/sm.css">
+    <link rel="stylesheet" type="text/css" href="css/sm-extend.css">
+    <link rel="stylesheet" type="text/css" href="css/module.css">
+    <link rel="stylesheet" type="text/css" href="css/base.css">
+    <style>
+       .bar:after{
+        height:0px;
+       }
+       .button {
+  height: 2.25rem !important;
+  line-height: 2.25rem !important;
+  font-size: 14px;
+}
+.downMarking{
+    height:1px;
+}
+  .downMarking:after{
+  content: '';
+  left: 0;
+  bottom: 0;
+  right: auto;
+  top: auto;
+  height: 1px;
+  width: 100%;
+  background-color: #dadada;
+  display: block;
+  z-index: 15;
+  -webkit-transform: scaleY(0.5);
+  transform: scaleY(0.5);
+  -webkit-transform-origin: 0 0;
+  transform-origin: 0 0;
+}
+
+    </style>
+</head>
+<body>
+<div class="page-group">
+    <div class="page">
+      <!--头部内容 !-->
+        <header class="bar bar-nav">
+            <button class="button button-link button-nav pull-left" style=" font-style: 14px; padding-left: 0.75rem;">
+                <span class="icon icon-left"></span>
+            </button>
+            <button class="saveBtn button button-link button-nav pull-right"
+                    style="padding-right: 0.9rem; font-size: 14px;color: #fff;">
+                编辑
+            </button>
+            <h1 class="title">我的收藏</h1>
+        </header>
+     <!--内容部分!-->
+         <div class="content search-content">
+                    <ul class="o-list"> <li class="row"><div class="col-20"> <img src="https://gd3.alicdn.com/imgextra/i2/0/TB1pKptXsrHK1Jjy1zjXXanYVXa_!!0-item_pic.jpg_400x400.jpg_.webp" /></div><div class="col-80" ><div class="p-list">部分现货【王小毒】 琴心  圆头浅口绑带粗跟单鞋子女8.31</div><div class="pspec"><div class="s-price">25.00</div><div class="s-payment">149人付款</div> <img class="s-count" src="./images/dian.png"></div></div>  </li>
+                    <div class="downMarking"></div>
+                    <li class="row"><div class="col-20"> <img src="https://gd3.alicdn.com/imgextra/i2/0/TB1pKptXsrHK1Jjy1zjXXanYVXa_!!0-item_pic.jpg_400x400.jpg_.webp" /></div><div class="col-80" ><div class="p-list">部分现货【王小毒】 琴心  圆头浅口绑带粗跟单鞋子女8.31</div><div class="pspec"><div class="s-price">25.00</div><img class="s-count" src="./images/dian.png"></div></div>  </li> </ul> 
+                
+        </div>
+        <nav class="">
+            
+        </nav>
+    </div>
+</div>
+<script type='text/javascript' src='js/lib/zepto.js' charset='utf-8'></script>
+<script>
+    $.config={
+        router:false
+    }
+</script>
+<script type='text/javascript' src='js/lib/sm.js' charset='utf-8'></script>
+<script type='text/javascript' src='js/lib/sm-extend.js' charset='utf-8'></script>
+<script>
+    $.init();
+</script>
+</body>
+
+</html>
