@@ -1,0 +1,153 @@
+.hui {
+  color: #999999;
+}
+.brown {
+  color: #8a4f14;
+}
+.yellow {
+  color: #e28b48;
+}
+.orange {
+  color: #c83f10;
+}
+.red {
+  color: #b11108;
+}
+.purple {
+  color: #780044;
+}
+.vip-body {
+  margin-top: 2.3rem;
+  tbox-sizing: border-box;
+  padding: 0.75rem 0.4em 1rem;
+  width: 100%;
+  height: auto;
+}
+.vip-grade {
+  width: 100%;
+  padding: 0.65rem 0;
+  background-color: #fff;
+}
+.vip-text {
+  font-size: 14px;
+}
+.vip-ico {
+  display: inline-block;
+  width: 0.8rem;
+  height: 0.9rem;
+  margin-right: 0.5rem;
+  vertical-align: middle;
+}
+.vip-join {
+  display: inline-block;
+  font-size: 12px;
+  text-indent: 0.5rem;
+}
+.vip-left {
+  float: left;
+}
+.vip-btn {
+  display: inline-block;
+  width: 4.05rem;
+  height: 1.5rem;
+  line-height: 1.5rem;
+  background-color: #ddc27b;
+  color: #fff;
+  font-size: 14px;
+  text-align: center;
+  border: none;
+  border-radius: 0.3rem;
+}
+.vip-tip {
+  display: block;
+  font-size: 12px;
+  text-indent: 1.9rem;
+}
+.vip-now {
+  background-color: transparent;
+  color: #ddc27b;
+}
+.tip-pic {
+  display: block;
+  margin: 5.0rem auto 1.35rem;
+  width: 7.4rem;
+  height: 6.8rem;
+}
+.tip-text {
+  text-align: center;
+  font-size: 14px;
+  margin-bottom: 1.0rem;
+}
+.tip-link {
+  text-decoration: underline;
+  color: #999999;
+  font-size: 12px;
+  text-align: center;
+}
+.tip-btn {
+  display: block;
+  background-color: #ddc27b;
+  color: #fff;
+  font-size: 14px;
+  text-align: center;
+  border: none;
+  border-radius: 0.3rem;
+  width: 4.65rem;
+  height: 1.8rem;
+  line-height: 1.8rem;
+  margin: 11.5rem auto 0;
+}
+.tip-success {
+  display: block;
+  margin: 5.0rem auto 1.35rem;
+  width: 6.95rem;
+  height: 6.95rem;
+}
+.tip-ok {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 0.25rem;
+}
+.tip-copy {
+  margin-top: 8.5rem;
+}
+.open-header {
+  display: block;
+  width: 100%;
+  height: 11.05rem;
+  margin-bottom: 0.5rem;
+}
+.open-item {
+  box-sizing: border-box;
+  padding: 0.4rem;
+  width: 100%;
+  height: 2.85rem;
+  background-color: #fff;
+}
+.open-ico {
+  width: 2.15rem;
+  height: 2.15rem;
+  float: left;
+}
+.open-main {
+  margin-left: 3rem;
+}
+.open-name {
+  font-size: 14px;
+}
+.open-detail {
+  font-size: 12px;
+}
+.open-btn {
+  display: block;
+  margin: 1.1rem auto 0;
+  width: 80%;
+  height: 2.05rem;
+  line-height: 2.05rem;
+  text-align: center;
+  border-radius: 0.2rem;
+  background: #ddc27b;
+  color: #fff;
+  font-size: 0.7rem;
+}
