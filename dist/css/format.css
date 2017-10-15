@@ -151,3 +151,52 @@
   color: #fff;
   font-size: 0.7rem;
 }
+.msg-header {
+  height: 1.85rem;
+  line-height: 1.85rem;
+  width: 100%;
+  font-size: 14px;
+}
+.msg-item {
+  box-sizing: border-box;
+  height: 2.1rem;
+  padding: 0.45rem 0;
+  background-color: #fff;
+}
+.msg-text {
+  display: inline-block;
+  font-size: 14px;
+  line-height: 1.1;
+}
+.checkbox {
+  display: none;
+}
+.switch {
+  display: inline-block;
+  width: 2.5rem;
+  height: 1.2rem;
+  border-radius: 0.6rem;
+  position: relative;
+  background-color: #bdbdbd;
+  overflow: hidden;
+  box-shadow: #ccc 0px 0px 0px 1px;
+}
+.switch:before {
+  content: '';
+  position: absolute;
+  display: inline-block;
+  left: 0;
+  width: 1.2rem;
+  height: 1.2rem;
+  border-radius: 50%;
+  background-color: #fff;
+  z-index: 20;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.checkbox:checked + .switch:before {
+  left: 26px;
+}
+.checkbox:checked + .switch {
+  background-color: #ddc27b;
+}
