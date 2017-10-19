@@ -1,0 +1,112 @@
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <title>购物车</title>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="stylesheet" type="text/css" href="${staticpath}/front/dist/css/lib/sm.css">
+    <link rel="stylesheet" type="text/css" href="${staticpath}/front/dist/css/lib/sm-extend.css">
+    <link rel="stylesheet" type="text/css" href="${staticpath}/front/dist/css/master.css">
+    <link rel="stylesheet" type="text/css" href="${staticpath}/front/dist/css/base.css">
+    <link rel="stylesheet" type="text/css" href="http://at.alicdn.com/t/font_3mgu42g42easjor.css">
+    <style>
+        .list-block .item-content {
+            padding: 0 0.65rem;
+        }
+
+        .bar-tab:before {
+            background-color: #d0d5de;
+        }
+
+        .icon-right {
+            float: right;
+        }
+
+        .list-block .item-inner {
+            width: auto;
+        }
+
+        .list-block .item-content {
+            padding: 0;
+        }
+
+        .list-block.media-list .item-media {
+            min-height: 2.2rem;
+            padding: 10px 10px;
+        }
+
+        .cart-content ul li img {
+            height: 4.5rem;
+            width: 4.5rem;
+            margin: 2% 4% 2% 0;
+        }
+
+        .lack {
+            margin-top: 40px;
+        }
+
+        .cart-content .item-title {
+            color: #e43737;
+        }
+
+        .button {
+            height: 2.25rem !important;
+            line-height: 2.25rem !important;
+            font-size: 14px;
+        }
+
+        .page {
+            z-index: 1;
+        }
+
+        .title {
+            z-index: 3;
+        }
+        .content{
+            margin-bottom: 2.5rem;
+        }
+        #allCheckbox .item-media{
+            margin: 15px 0 0 10px;
+            float: left;
+        }
+    </style>
+</head>
+
+<body>
+<div class="page-group">
+    <div class="page">
+        <!--头部部分 !-->
+        <header class="bar bar-nav">
+            <button class="button button-link button-nav pull-left" style=" font-style: 14px; padding-left: 0.75rem;" id="back">
+                <span class="icon icon-left"></span>
+            </button>
+            <button class="button button-link button-nav pull-right"
+                    style="padding-right: 0.75rem; font-size: 14px;">
+                <span id="editBtn" class="saveBtn">编辑</span>
+            </button>
+            <h1 class="title">购物车</h1>
+        </header>
+        <div class="content cart-content">
+            <div class="list-block media-list" data-url="${basepath}/rest/front/product/toProductDetail">
+            </div>
+        </div>
+        <nav class="bar bar-tab account-bar-tab" id="tool-bar">
+            <label class="yuBtn label-checkbox" id="allCheckbox"><input type="checkbox" name="checkbox" id="allInput"> <div class="item-media"><i class="icon icon-form-checkbox"></i></div> </label>
+            <h4>合计：<span>¥<span><span class="total-price">0</span></h4>
+            <span data-url="${basepath}/rest/front/order/toCartOrderDetail" class="accountBtn g-pay">去结算</span>
+        </nav>
+    </div>
+</div>
+<script type='text/javascript' src='${staticpath}/front/dist/js/lib/zepto.js' charset='utf-8'></script>
+<script>
+    $.config = {router: false}
+</script>
+<script type='text/javascript' src='${staticpath}/front/dist/js/lib/sm.js' charset='utf-8'></script>
+<script type='text/javascript' src='${staticpath}/front/dist/js/lib/sm-extend.js' charset='utf-8'></script>
+<script type="text/javascript" src="${staticpath}/front/dist/js/cart/cartList.js"></script>
+<script>$.init()</script>
+</body>
+
+</html>
